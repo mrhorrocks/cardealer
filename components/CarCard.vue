@@ -38,8 +38,7 @@ export default {
 .car-card {
     display: flex;
     flex-direction: column;
-    width: 333px;
-    height: 364px;
+    max-width: 333px;
     margin: 15px;
     border-radius: 1rem;
     overflow: hidden;
@@ -49,7 +48,6 @@ export default {
 
 .image-container {
     position: relative;
-    height: 250px;
 
     & img {
         width: 100%;
@@ -59,7 +57,6 @@ export default {
         position: absolute;
         top: 10px;
         left: 10px;
-        /* background-color: red; */
 
         & span {
             background-color: #3F3A50;
@@ -79,9 +76,9 @@ export default {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    /* background-color: red; */
 
     & span {
+        display: inline-block;
         background-color: #3F3A50;
         font-size: 12px;
         line-height: 18px;
