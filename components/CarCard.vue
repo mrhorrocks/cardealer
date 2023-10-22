@@ -47,6 +47,11 @@ export default {
 
 .image-container {
     position: relative;
+    height: 250px;
+
+    & img {
+        width: 100%;
+    }
     & .listing-tag {
         position: absolute;
         top: 10px;
