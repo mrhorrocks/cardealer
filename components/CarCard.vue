@@ -36,7 +36,6 @@ export default {
 
 <style scoped>
 .car-card {
-    box-shadow: 0px 6px 20px #00000040;
     display: flex;
     flex-direction: column;
     width: 333px;
@@ -45,6 +44,7 @@ export default {
     border-radius: 1rem;
     overflow: hidden;
     background-color: #ffffff;
+    box-shadow: 0px 6px 20px #00000040;
 }
 
 .image-container {
@@ -59,7 +59,7 @@ export default {
         position: absolute;
         top: 10px;
         left: 10px;
-        background-color: red;
+        /* background-color: red; */
 
         & span {
             background-color: #3F3A50;
@@ -67,8 +67,8 @@ export default {
             line-height: 27px;
             padding: 2px 10px;
             margin: 0 5px 0 5px;
-            border: 1px solid #fff;
-            color: #fff;
+            border: 1px solid rgb(255, 255, 255, 0.25); /* #FFFFFF30 */
+            color: #ffffff;
             border-radius: 8px;
         }
     }
@@ -79,15 +79,15 @@ export default {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: red;
+    /* background-color: red; */
 
     & span {
         background-color: #3F3A50;
         font-size: 12px;
         line-height: 18px;
         padding: 2px 10px;
-        margin: 0 5px 0 5px;
-        border: 1px solid #ffffff;
+        margin: 0 3px 0 5px;
+        border: 1px solid rgb(255, 255, 255, 0.25); /* #FFFFFF30 */
         color: #ffffff;
         border-radius: 8px;
     }
@@ -107,6 +107,7 @@ export default {
 
         & .total-price a {
             color: #7572FF;
+            margin-left: 5px;
         }
     }
 }
