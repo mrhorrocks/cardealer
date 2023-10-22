@@ -17,10 +17,12 @@
         </div>
 
         <div class="car-details">
-            <p>2014 (64) Mercede-Benz</p>
+            <p><span>2014 (64) Mercede-Benz</span></p>
             <p>CLA 250e Coupe Shooting Break</p>
-            <p>£550.90 /mo(PC)</p>
-            <p>£23.300 <a href="#">Calculate</a></p>
+            <div class="pricing">
+                <p class="ppm"><span>£550.90</span> /mo(PC)</p>
+                <p class="total-price">£23.300 <a href="#">Calculate</a></p>
+            </div>
         </div>
 
     </article>
@@ -42,7 +44,7 @@ export default {
     margin: 15px;
     border-radius: 1rem;
     overflow: hidden;
-    background-color: pink;
+    background-color: #ffffff;
 }
 
 .image-container {
@@ -52,6 +54,7 @@ export default {
     & img {
         width: 100%;
     }
+
     & .listing-tag {
         position: absolute;
         top: 10px;
@@ -61,38 +64,54 @@ export default {
         & span {
             background-color: #3F3A50;
             font-size: 16px;
-            padding: 1px 10px 1px 10px;
+            line-height: 27px;
+            padding: 2px 10px;
             margin: 0 5px 0 5px;
             border: 1px solid #fff;
             color: #fff;
             border-radius: 8px;
         }
     }
+}
 
-    & .spec-tags {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        background-color: red;
 
-        & span {
-            background-color: #3F3A50;
-            font-size: 12px;
-            padding: 1px 10px 1px 10px;
-            margin: 0 5px 0 5px;
-            border: 1px solid #fff;
-            color: #fff;
-            border-radius: 8px;
-        }
+.spec-tags {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: red;
+
+    & span {
+        background-color: #3F3A50;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 2px 10px;
+        margin: 0 5px 0 5px;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        border-radius: 8px;
     }
 }
 
 .car-details {
-    padding: 0.5rem;
+    padding: 0.75rem 0.5rem 0.5rem 0.5rem;
+    font-size: 0.75rem;
+
+    & span {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .pricing {
+        margin-top: 1rem;
+
+        & .total-price a {
+            color: #7572FF;
+        }
+    }
 }
 
 p {
-    font-size: 1rem;
-    margin: 0;
+    margin: 0 0 0.25rem 0;
 }
 </style>
