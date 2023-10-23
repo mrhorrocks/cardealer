@@ -18,6 +18,7 @@
 
         <div class="car-details">
             <p><span>2014 (64) Mercede-Benz</span></p>
+            <FavouriteStar class="favorite" />
             <p>CLA 250e Coupe Shooting Break</p>
             <div class="pricing">
                 <p class="ppm"><span>£550.90</span> /mo(PC)</p>
@@ -83,7 +84,7 @@ export default {
         font-size: 12px;
         line-height: 18px;
         padding: 2px 10px;
-        margin: 0 3px 0 5px;
+        margin: 0 3px 3px 5px;
         border: 1px solid rgb(255, 255, 255, 0.25); /* #FFFFFF30 */
         color: #ffffff;
         border-radius: 8px;
@@ -91,12 +92,22 @@ export default {
 }
 
 .car-details {
+    position: relative;
     padding: 0.75rem 0.5rem 0.5rem 0.5rem;
     font-size: 0.75rem;
 
     & span {
         font-size: 1rem;
         font-weight: 600;
+    }
+
+    & .favorite {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 20px;
+        width: 20px;
+        /* background-color: red; */
     }
 
     .pricing {
