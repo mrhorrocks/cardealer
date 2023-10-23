@@ -1,14 +1,24 @@
 <template>
-  <div class="search-results">
-    <CarCard />
-    <CarCard />
-    <CarCard />
-  </div>
+  <header id="header"></header>
+  <main>
+    <div class="search-results">
+      <CarCard />
+      <CarCard />
+      <CarCard />
+      <CarCard />
+    </div>
+  </main>
 </template>
 
-<style>
+<style lang="scss">
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* 
@@ -40,6 +50,12 @@ xl: '1280px',
   body {
     background-color: green;
   }
+}
+
+header {
+  width: 100%;
+  background-color: bisque;
+  height: 200px;
 }
 
 .search-results {
