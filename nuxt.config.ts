@@ -15,9 +15,7 @@ export default defineNuxtConfig({
         ],
     }
 },
-css: [
-    // "@/assets/css/font-awesome.min.css",
-    // '@/assets/fonts/googlefonts.css'
-],
-  devtools: { enabled: false }
+css: ['~/assets/scss/main.scss'],
+
+devtools: { enabled: false }
 })
