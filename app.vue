@@ -44,7 +44,7 @@ header {
     gap: 20px;
     max-width: 1440px;
     margin: 0 auto;
-    background-color: aqua;
+    background-color: #efefef;
 }
 
 main {
@@ -71,9 +71,6 @@ main {
 }
 
 @media only screen and (min-width: 640px) {
-    body {
-        background-color: red;
-    }
 
     .flexed-cols {
         max-width: 640px;
@@ -81,9 +78,6 @@ main {
 }
 
 @media only screen and (min-width: 769px) {
-    body {
-        background-color: yellow;
-    }
 
     header {
         position: relative;
@@ -109,9 +103,6 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
-    body {
-        background-color: pink;
-    }
 
     header {
         max-width: 1024px;
@@ -124,9 +115,6 @@ main {
 }
 
 @media only screen and (min-width: 1280px) {
-    body {
-        background-color: green;
-    }
 
     header {
         max-width: 1280px;
@@ -138,9 +126,6 @@ main {
 }
 
 @media only screen and (min-width: 1440px) {
-    body {
-        background-color: orange;
-    }
 
     header {
         max-width: 1440px;
