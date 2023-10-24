@@ -74,6 +74,7 @@ main {
     height: 50px;
     background-color: #db006e;
     color: white;
+    text-align: center;
     box-shadow: 0px 7px 5px #0000001c;
     padding: 1rem;
     box-sizing: border-box;
@@ -109,6 +110,7 @@ main {
         top: 0;
         left: 0;
         width: calc(25% - 15px);
+        text-align: left;
         margin-top: 12px;
         border-radius: 0rem;
     }
