@@ -1,6 +1,6 @@
 # Car Dealer Card Component
 
- 
+[![](https://img.shields.io/badge/nuxt.js-v3.8.0-04C690.svg)](https://nuxt.com) [![](https://img.shields.io/badge/vue-v3.3.6-04C690.svg)](https://vuejs.org)
 
 ## Setup
 
