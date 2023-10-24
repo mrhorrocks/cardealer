@@ -24,7 +24,7 @@
 <style lang="scss">
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     background-color: #ffffff;
 }
 
