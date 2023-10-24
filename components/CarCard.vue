@@ -205,10 +205,11 @@
             }
 
             .pricing {
-                margin-top: 1rem;
                 width: 50%;
                 float: left;
                 text-align: left;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
 
                 .total-price a {
                     color: #7572FF;
