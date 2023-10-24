@@ -39,12 +39,41 @@ export default {
 .car-card {
     display: flex;
     flex-direction: column;
-    max-width: 333px;
-    margin: 15px;
+    width: 100%;
+    margin: 12px;
     border-radius: 1rem;
     overflow: hidden;
     background-color: #ffffff;
     box-shadow: 0px 6px 20px #00000040;
+}
+
+@media only screen and (min-width: 640px) {
+    .car-card {
+        max-width: 294px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .car-card {
+        max-width: 259px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .car-card {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .car-card {
+        max-width: 290px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .car-card {
+        max-width: 333px;
+    }
 }
 
 .image-container {
@@ -65,7 +94,8 @@ export default {
             line-height: 27px;
             padding: 2px 10px;
             margin: 0 5px 0 5px;
-            border: 1px solid rgb(255, 255, 255, 0.25); /* #FFFFFF30 */
+            border: 1px solid rgb(255, 255, 255, 0.25);
+            /* #FFFFFF30 */
             color: #ffffff;
             border-radius: 8px;
         }
@@ -85,7 +115,8 @@ export default {
         line-height: 18px;
         padding: 2px 10px;
         margin: 0 3px 3px 5px;
-        border: 1px solid rgb(255, 255, 255, 0.25); /* #FFFFFF30 */
+        border: 1px solid rgb(255, 255, 255, 0.25);
+        /* #FFFFFF30 */
         color: #ffffff;
         border-radius: 8px;
     }
@@ -122,5 +153,4 @@ export default {
 
 p {
     margin: 0 0 0.25rem 0;
-}
-</style>
+}</style>

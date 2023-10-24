@@ -1,66 +1,153 @@
 <template>
-  <header id="header"></header>
-  <main>
-    <div class="search-results">
-      <CarCard />
-      <CarCard />
-      <CarCard />
-      <CarCard />
+    <header id="header">header</header>
+
+    <div class="flexed-cols">
+        <!-- FILTERS -->
+        <div class="filters">Filters</div>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <div class="search-results">
+                <CarCard />
+                <CarCard />
+                <CarCard />
+                <CarCard />
+                <CarCard />
+                <CarCard />
+            </div>
+        </main>
+
     </div>
-  </main>
 </template>
 
 <style lang="scss">
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-  margin: 0 auto;
-  width: 100%;
-}
-
-/* 
-sm: '640px',
-md: '768px',
-lg: '1024px',
-xl: '1280px', 
-*/
-
-@media only screen and (min-width: 640px) {
-  body {
-    background-color: red;
-  }
-}
-
-@media only screen and (min-width: 798px) {
-  body {
-    background-color: yellow;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  body {
-    background-color: pink;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  body {
-    background-color: green;
-  }
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  width: 100%;
-  background-color: bisque;
-  height: 200px;
+    max-width: 100%;
+    height: 90px;
+    margin: 0 auto;
+    background-color: bisque;
+    transition: width 2s;
 }
 
-.search-results {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
+.flexed-cols {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    grid-gap: 20px;
+    gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+main {
+    width: 100%;
+    margin-bottom: 80px;
+
+    .search-results {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+.filters {
+    position: fixed;
+    left: 2.5%;
+    bottom: 20px;
+    z-index: 100;
+    width: 95%;
+    height: 50px;
+    background-color: pink;
+}
+
+@media only screen and (min-width: 640px) {
+    body {
+        background-color: red;
+    }
+
+    header {
+        max-width: 640px;
+    }
+
+    .flexed-cols {
+        max-width: 640px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        background-color: yellow;
+    }
+
+    header {
+        max-width: 768px;
+    }
+
+    .flexed-cols {
+        max-width: 768px;
+    }
+
+    main {
+        width: calc(75% - 5px);
+        margin-bottom: 0px;
+    }
+
+    .filters {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: calc(25% - 15px);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: pink;
+    }
+
+    header {
+        max-width: 1024px;
+        height: 100px;
+    }
+
+    .flexed-cols {
+        max-width: 1024px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        background-color: green;
+    }
+
+    header {
+        max-width: 1280px;
+    }
+
+    .flexed-cols {
+        max-width: 1280px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-color: orange;
+    }
+
+    header {
+        max-width: 1440px;
+    }
+
+    .flexed-cols {
+        max-width: 1440px;
+    }
 }
 </style>
