@@ -4,7 +4,7 @@
     <div class="flexed-cols">
 
         <!-- FILTERS -->
-        <div class="filters">Filters</div>
+        <aside class="filters">Filters</aside>
 
         <!-- MAIN CONTENT -->
         <main>
@@ -67,16 +67,17 @@ main {
 
 .filters {
     position: fixed;
-    left: 2.5%;
+    left: 33%;
     bottom: 20px;
     z-index: 100;
-    width: 95%;
+    width: 33%;
     height: 50px;
     background-color: #db006e;
     color: white;
     box-shadow: 0px 7px 5px #0000001c;
     padding: 1rem;
     box-sizing: border-box;
+    border-radius: 1rem;
 }
 
 @media only screen and (min-width: 640px) {
@@ -109,6 +110,7 @@ main {
         left: 0;
         width: calc(25% - 15px);
         margin-top: 12px;
+        border-radius: 0rem;
     }
 }
 
