@@ -34,7 +34,7 @@
 
                 <div class="pricing">
                     <p class="ppm"><span>£550.90</span> /mo(PC)</p>
-                    <p class="total-price">£23.300 <a href="#">Calculate</a></p>
+                    <p class="total-price">£23.300 <button>Calculate</button> </p>
                 </div>
 
             </div>
@@ -139,7 +139,10 @@
             float: right;
             text-align: right;
 
-            .total-price a {
+            .total-price button {
+                background-color: transparent;
+                border: none;
+                font-size: 0.75rem;
                 color: #7572FF;
                 margin-left: 5px;
             }
