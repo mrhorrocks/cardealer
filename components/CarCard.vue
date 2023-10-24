@@ -34,7 +34,7 @@
 
             <div class="pricing">
                 <p class="ppm"><span>£550.90</span> /mo(PC)</p>
-                <p class="total-price">£23.300 <!-- a href="#">Calculate</a --></p>
+                <p class="total-price">£23.300 <a href="#">Calculate</a></p>
             </div>
 
         </div>
