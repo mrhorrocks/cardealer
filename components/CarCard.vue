@@ -53,12 +53,14 @@
     border-radius: 0rem;
     overflow: hidden;
     background-color: #ffffff;
-    box-shadow: 0px 6px 20px #00000040;
 }
 
 .image-container {
     position: relative;
-    width: max-content;
+    width: -moz-max-content;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
 
     img {
         width: 113px;
@@ -146,6 +148,7 @@ p {
         max-width: 45%;
         border-radius: 1rem;
         margin: 12px;
+        box-shadow: 0px 6px 20px #00000040;
     }
 
     .listing-tag {
