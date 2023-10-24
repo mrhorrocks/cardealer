@@ -25,7 +25,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #efefef;
+    background-color: #ffffff;
 }
 
 header {
@@ -49,7 +49,7 @@ header {
     gap: 20px;
     max-width: 1440px;
     margin: 0 auto;
-    background-color: #efefef;
+    background-color: #ffffff;
 }
 
 main {
