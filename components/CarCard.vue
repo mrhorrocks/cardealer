@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 305px;
     margin-top: 0.5rem;
     border-radius: 0rem;
     overflow: hidden;
@@ -148,6 +149,7 @@ p {
         max-width: 45%;
         border-radius: 1rem;
         margin: 12px;
+        min-width: inherit;
         box-shadow: 0px 6px 20px #00000040;
     }
 
