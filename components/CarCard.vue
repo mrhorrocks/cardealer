@@ -1,44 +1,44 @@
 <template>
     <article class="car-card">
-
-        <!-- Listings -->
-        <div class="listing-tag">
-            <span>Used</span>
-        </div>
-
-        <!-- Images -->
-        <div class="image-container">
-            <img src="@/assets/img/placeholder.jpg" alt="Car">
-            <img src="@/assets/img/placeholder.jpg" alt="Car">
-            <img src="@/assets/img/placeholder.jpg" alt="Car">
-            <img src="@/assets/img/placeholder.jpg" alt="Car">
-            <img src="@/assets/img/placeholder.jpg" alt="Car">
-            <img src="@/assets/img/placeholder.jpg" alt="Car">
-        </div>
-
-        <!-- Car Details -->
-        <div class="car-details">
-
-            <p><span>2014 (64) Mercede-Benz</span></p>
-
-            <FavouriteStar class="favorite" />
-
-            <p>CLA 250e Coupe Shooting Break</p>
-
-            <div class="spec-tags">
-                <span>32k miles</span>
-                <span>Hybrid</span>
-                <span>Manual</span>
-                <span>SUV</span>
+        <a href="#">
+            <!-- Listings -->
+            <div class="listing-tag">
+                <span>Used</span>
             </div>
 
-            <div class="pricing">
-                <p class="ppm"><span>£550.90</span> /mo(PC)</p>
-                <p class="total-price">£23.300 <a href="#">Calculate</a></p>
+            <!-- Images -->
+            <div class="image-container">
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
             </div>
 
-        </div>
+            <!-- Car Details -->
+            <div class="car-details">
 
+                <p><span>2014 (64) Mercede-Benz</span></p>
+
+                <FavouriteStar class="favorite" />
+
+                <p>CLA 250e Coupe Shooting Break</p>
+
+                <div class="spec-tags">
+                    <span>32k miles</span>
+                    <span>Hybrid</span>
+                    <span>Manual</span>
+                    <span>SUV</span>
+                </div>
+
+                <div class="pricing">
+                    <p class="ppm"><span>£550.90</span> /mo(PC)</p>
+                    <p class="total-price">£23.300 <a href="#">Calculate</a></p>
+                </div>
+
+            </div>
+        </a>
     </article>
 </template>
 
@@ -53,10 +53,17 @@
     border-radius: 0rem;
     overflow: hidden;
     background-color: #ffffff;
+
+    a {
+        text-decoration: none;
+        color: initial;
+    }
+
     .listing-tag {
         position: absolute;
         top: 96px;
         right: 35px;
+
         span {
             background-color: #3F3A50;
             font-size: 0.8rem;
@@ -68,25 +75,30 @@
             border-radius: 8px;
         }
     }
+
     .image-container {
         position: relative;
         width: -moz-max-content;
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
+
         img {
             width: 113px;
             border-radius: 1rem;
             margin-right: 0.5rem;
         }
     }
+
     .car-details {
         position: relative;
         padding: 0.75rem 0.5rem 0.5rem 0.5rem;
         font-size: 0.75rem;
+
         p {
             margin: 0 0 0.25rem 0;
         }
+
         .favorite {
             position: absolute;
             top: 10px;
@@ -94,14 +106,17 @@
             height: 20px;
             width: 20px;
         }
+
         span {
             font-size: 1rem;
             font-weight: 600;
         }
+
         .spec-tags {
             margin-top: 1rem;
             width: 50%;
             float: left;
+
             span {
                 display: inline-block;
                 font-size: 12px;
@@ -111,16 +126,19 @@
                 color: #55595D;
                 border-radius: 0px;
                 border-right: 1px solid rgb(85, 89, 93, 0.25);
+
                 &:last-child {
                     border: 0;
                 }
             }
         }
+
         .pricing {
             margin-top: 1rem;
             width: 50%;
             float: right;
             text-align: right;
+
             .total-price a {
                 color: #7572FF;
                 margin-left: 5px;
@@ -136,11 +154,13 @@
         margin: 12px;
         min-width: inherit;
         box-shadow: 0px 6px 20px #00000040;
+
         .listing-tag {
             position: absolute;
             top: 10px;
             left: 10px;
             z-index: 100;
+
             span {
                 background-color: #3F3A50;
                 font-size: 1rem;
@@ -152,14 +172,17 @@
                 border-radius: 8px;
             }
         }
+
         .image-container {
             position: relative;
             width: max-content;
+
             img {
                 width: 257px;
                 border-radius: 0;
             }
         }
+
         .car-details {
             .spec-tags {
                 position: absolute;
@@ -167,6 +190,7 @@
                 left: 0;
                 width: 100%;
                 margin: 0;
+
                 span {
                     display: inline-block;
                     background-color: #3F3A50;
@@ -179,11 +203,13 @@
                     border-radius: 8px;
                 }
             }
+
             .pricing {
                 margin-top: 1rem;
                 width: 50%;
                 float: left;
                 text-align: left;
+
                 .total-price a {
                     color: #7572FF;
                     margin-left: 5px;
@@ -196,6 +222,7 @@
 @media only screen and (min-width: 1024px) {
     .car-card {
         max-width: 350px;
+
         .image-container {
             img {
                 width: 350px;
@@ -207,6 +234,7 @@
 @media only screen and (min-width: 1280px) {
     .car-card {
         max-width: 290px;
+
         .image-container {
             img {
                 width: 290px;
@@ -219,11 +247,11 @@
 @media only screen and (min-width: 1440px) {
     .car-card {
         max-width: 333px;
+
         .image-container {
             img {
                 width: 333px;
             }
         }
     }
-}
-</style>
+}</style>
