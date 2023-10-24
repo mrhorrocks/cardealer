@@ -7,13 +7,15 @@ export default defineNuxtConfig({
         viewport: 'width=device-width, initial-scale=1',
         title: 'Car Dealer Component',
         meta: [{ name: 'description', content: 'Car Dealer Component' }],
-        // link: [
-        //     { 
-        //         rel: 'stylesheet', 
-        //         href: 'https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap',
-        //     }
-        // ],
+        link: [
+            { 
+                rel: 'stylesheet', 
+                href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+            }
+        ],
     }
 },
-  devtools: { enabled: false }
+css: ['~/assets/scss/main.scss'],
+
+devtools: { enabled: false }
 })
