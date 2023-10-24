@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .car-card {
     display: flex;
     flex-direction: column;
@@ -79,16 +79,16 @@ export default {
 .image-container {
     position: relative;
 
-    & img {
+    img {
         width: 100%;
     }
 
-    & .listing-tag {
+    .listing-tag {
         position: absolute;
         top: 10px;
         left: 10px;
 
-        & span {
+        span {
             background-color: #3F3A50;
             font-size: 16px;
             line-height: 27px;
@@ -108,7 +108,7 @@ export default {
     bottom: 10px;
     left: 10px;
 
-    & span {
+    span {
         display: inline-block;
         background-color: #3F3A50;
         font-size: 12px;
@@ -127,12 +127,12 @@ export default {
     padding: 0.75rem 0.5rem 0.5rem 0.5rem;
     font-size: 0.75rem;
 
-    & span {
+    span {
         font-size: 1rem;
         font-weight: 600;
     }
 
-    & .favorite {
+    .favorite {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -144,7 +144,7 @@ export default {
     .pricing {
         margin-top: 1rem;
 
-        & .total-price a {
+        .total-price a {
             color: #7572FF;
             margin-left: 5px;
         }
@@ -153,4 +153,5 @@ export default {
 
 p {
     margin: 0 0 0.25rem 0;
-}</style>
+}
+</style>
