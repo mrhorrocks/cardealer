@@ -1,7 +1,8 @@
 <template>
-    <header id="header">header</header>
+    <header id="header">Header</header>
 
     <div class="flexed-cols">
+
         <!-- FILTERS -->
         <div class="filters">Filters</div>
 
@@ -34,6 +35,8 @@ header {
     margin: 0 auto;
     background-color: bisque;
     box-shadow: 0px 7px 5px #0000001c;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .flexed-cols {
@@ -68,7 +71,11 @@ main {
     z-index: 100;
     width: 95%;
     height: 50px;
-    background-color: pink;
+    background-color: #db006e;
+    color: white;
+    box-shadow: 0px 7px 5px #0000001c;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 @media only screen and (min-width: 640px) {
@@ -100,6 +107,7 @@ main {
         top: 0;
         left: 0;
         width: calc(25% - 15px);
+        margin-top: 12px;
     }
 }
 
