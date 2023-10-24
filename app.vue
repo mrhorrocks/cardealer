@@ -27,11 +27,12 @@ body {
 }
 
 header {
-    max-width: 100%;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
     height: 90px;
     margin: 0 auto;
     background-color: bisque;
-    transition: width 2s;
 }
 
 .flexed-cols {
@@ -48,6 +49,7 @@ header {
 
 main {
     width: 100%;
+    margin-top: 95px;
     margin-bottom: 80px;
 
     .search-results {
@@ -73,10 +75,6 @@ main {
         background-color: red;
     }
 
-    header {
-        max-width: 640px;
-    }
-
     .flexed-cols {
         max-width: 640px;
     }
@@ -88,6 +86,7 @@ main {
     }
 
     header {
+        position: relative;
         max-width: 768px;
     }
 
@@ -97,6 +96,7 @@ main {
 
     main {
         width: calc(75% - 5px);
+        margin-top: 0px;
         margin-bottom: 0px;
     }
 
