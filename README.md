@@ -1,23 +1,19 @@
-# Nuxt 3 Minimal Starter
+# Car Dealer Card Component
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![](https://img.shields.io/badge/nuxt.js-v3.8.0-04C690.svg)](https://nuxt.com) [![](https://img.shields.io/badge/vue-v3.3.6-04C690.svg)](https://vuejs.org)
 
 ## Setup
 
 Make sure to install the dependencies:
 
+## System Requirements
+
+[Nodejs](https://nodejs.org/en)
+
 ```bash
 # npm
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -28,14 +24,6 @@ Start the development server on `http://localhost:3000`:
 # npm
 npm run dev
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -44,16 +32,8 @@ Build the application for production:
 
 ```bash
 # npm
-npm run build
+npm run generate
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
@@ -62,14 +42,4 @@ Locally preview production build:
 # npm
 npm run preview
 
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
