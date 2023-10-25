@@ -34,7 +34,7 @@
 
                 <div class="pricing">
                     <p class="ppm"><span>£550.90</span> /mo(PC)</p>
-                    <p class="total-price">£23.300 <button>Calculate</button> </p>
+                    <p class="total-price">£23.300 <button> Calculate finance</button> </p>
                 </div>
 
             </div>
@@ -101,7 +101,7 @@
 
         .favorite {
             position: absolute;
-            top: 10px;
+            top: 6px;
             right: 10px;
             height: 20px;
             width: 20px;
@@ -144,7 +144,11 @@
                 border: none;
                 font-size: 0.75rem;
                 color: #7572FF;
-                margin-left: 5px;
+                padding: 0;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -160,15 +164,15 @@
 
         .listing-tag {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 13px;
+            left: 5px;
             z-index: 100;
 
             span {
                 background-color: #3F3A50;
                 font-size: 1rem;
                 line-height: 27px;
-                padding: 2px 10px;
+                padding: 5px 10px;
                 margin: 0 5px 0 5px;
                 border: 1px solid rgb(255, 255, 255, 0.25);
                 color: #ffffff;
@@ -208,7 +212,7 @@
             }
 
             .pricing {
-                width: 50%;
+                width: 60%;
                 float: left;
                 text-align: left;
                 margin-top: 1rem;
@@ -226,7 +230,13 @@
 @media only screen and (min-width: 1024px) {
     .car-card {
         max-width: 350px;
-
+        .car-details {
+            .spec-tags {
+                span {
+                    font-size: 0.725rem;
+                }
+            }
+        }
         .image-container {
             img {
                 width: 350px;
