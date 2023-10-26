@@ -111,7 +111,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 
     header {
         position: relative;
