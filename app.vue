@@ -99,14 +99,14 @@ header {
     }
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 375px) {
 
     .flexed-cols {
-        max-width: 640px;
+        max-width: 375px;
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 
     header {
         position: relative;
@@ -115,6 +115,24 @@ header {
 
     .flexed-cols {
         max-width: 768px;
+
+        main {
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    header {
+        max-width: 1024px;
+        height: 100px;
+    }
+
+    .flexed-cols {
+        max-width: 1024px;
 
         aside.filters {
             position: relative;
@@ -131,29 +149,6 @@ header {
             margin-top: 0px;
             margin-bottom: 0px;
         }
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    header {
-        max-width: 1024px;
-        height: 100px;
-    }
-
-    .flexed-cols {
-        max-width: 1024px;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-
-    header {
-        max-width: 1280px;
-    }
-
-    .flexed-cols {
-        max-width: 1280px;
     }
 }
 

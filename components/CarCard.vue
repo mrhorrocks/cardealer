@@ -19,10 +19,11 @@
             <!-- Car Details -->
             <div class="car-details">
 
-                <p><span>{{ item.name }}</span></p>
-                
+                <!-- Car Name -->
+                <p class="car-name"><span>{{ item.name }}</span></p>
+
                 <FavouriteStar class="favorite" />
-                
+
                 <p>{{ item.derivative }}</p>
 
                 <div class="spec-tags">
@@ -59,7 +60,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 305px;
+    min-width: 375px;
     margin-top: 0.5rem;
     border-radius: 0rem;
     overflow: hidden;
@@ -72,7 +73,7 @@ export default {
 
     .listing-tag {
         position: absolute;
-        top: 96px;
+        top: 100px;
         right: 35px;
 
         span {
@@ -108,11 +109,18 @@ export default {
 
         p {
             margin: 0 0 0.25rem 0;
+            &.car-name {
+                width: 270px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
         }
 
         .favorite {
             position: absolute;
-            top: 6px;
+            top: 10px;
             right: 10px;
             height: 20px;
             width: 20px;
@@ -157,6 +165,7 @@ export default {
                 color: #7572FF;
                 padding: 0;
                 cursor: pointer;
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -196,7 +205,7 @@ export default {
             width: max-content;
 
             img {
-                width: 257px;
+                width: 347px;
                 border-radius: 0;
             }
         }
@@ -212,7 +221,7 @@ export default {
                 span {
                     display: inline-block;
                     background-color: #3F3A50;
-                    font-size: 0.625rem;
+                    font-size: 0.725rem;
                     line-height: 18px;
                     padding: 2px 10px;
                     margin: 0 3px 3px 5px;
@@ -241,30 +250,11 @@ export default {
 @media only screen and (min-width: 1024px) {
     .car-card {
         max-width: 350px;
-        .car-details {
-            .spec-tags {
-                span {
-                    font-size: 0.725rem;
-                }
-            }
-        }
+
         .image-container {
             img {
                 width: 350px;
             }
-        }
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .car-card {
-        max-width: 290px;
-
-        .image-container {
-            img {
-                width: 290px;
-            }
-
         }
     }
 }
