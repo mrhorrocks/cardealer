@@ -35,7 +35,7 @@
 
                 <div class="pricing">
                     <p class="ppm"><span>£550.90</span> /mo(PC)</p>
-                    <p class="total-price">£{{ item.price }} <button> Calculate finance</button> </p>
+                    <p class="total-price">£{{ item.price }} <button @click="calculateFinance"> Calculate finance</button> </p>
                 </div>
 
             </div>
@@ -50,7 +50,12 @@ export default {
         return {
             carsData
         };
-    }
+    },
+    methods: {
+        calculateFinance(e) {
+            e.preventDefault();
+        },
+    },
 }
 </script>
 
