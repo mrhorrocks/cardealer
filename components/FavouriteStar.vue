@@ -12,8 +12,9 @@ export default {
         };
     },
     methods: {
-        toggleFavorite() {
+        toggleFavorite(e) {
             this.isFavorite = !this.isFavorite;
+            e.preventDefault();
         },
     },
 };
