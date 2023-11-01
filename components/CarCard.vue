@@ -1,9 +1,9 @@
 <template>
-    <article class="car-card">
+    <article v-for="item in carsData.data" :key="item.id" class="car-card">
         <a href="#">
             <!-- Listings -->
             <div class="listing-tag">
-                <span>Used</span>
+                <span>{{ item.advert_classification }}</span>
             </div>
 
             <!-- Images -->
@@ -19,28 +19,39 @@
             <!-- Car Details -->
             <div class="car-details">
 
-                <p><span>2014 (64) Mercede-Benz</span></p>
-
+                <p><span>{{ item.name }}</span></p>
+                
                 <FavouriteStar class="favorite" />
-
-                <p>CLA 250e Coupe Shooting Break</p>
+                
+                <p>{{ item.derivative }}</p>
 
                 <div class="spec-tags">
-                    <span>32k miles</span>
-                    <span>Hybrid</span>
-                    <span>Manual</span>
-                    <span>SUV</span>
+                    <span>{{ item.odometer_value }}</span>
+                    <span>{{ item.body_type }}</span>
+                    <span>{{ item.technical_data.transmission.value }}</span>
+                    <span>{{ item.body_type }}</span>
                 </div>
 
                 <div class="pricing">
                     <p class="ppm"><span>£550.90</span> /mo(PC)</p>
-                    <p class="total-price">£23.300 <button> Calculate finance</button> </p>
+                    <p class="total-price">£{{ item.price }} <button> Calculate finance</button> </p>
                 </div>
 
             </div>
         </a>
     </article>
 </template>
+
+<script>
+import carsData from '~/assets/mock-vehicle-search-response.json';
+export default {
+    data() {
+        return {
+            carsData
+        };
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 .car-card {

@@ -10,11 +10,6 @@
         <main>
             <div class="search-results">
                 <CarCard />
-                <CarCard />
-                <CarCard />
-                <CarCard />
-                <CarCard />
-                <CarCard />
             </div>
         </main>
 
