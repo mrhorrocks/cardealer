@@ -20,7 +20,7 @@
             <div class="car-details">
 
                 <!-- Car Name -->
-                <p class="car-name"><span>{{ item.name }}</span></p>
+                <p class="car-name">{{ item.name }}</p>
 
                 <FavouriteStar class="favorite" />
 
@@ -115,6 +115,8 @@ export default {
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
+                font-weight: 500;
+                font-size: 1rem;
             }
         }
 
@@ -138,7 +140,8 @@ export default {
 
             span {
                 display: inline-block;
-                font-size: 12px;
+                font-size: 0.75rem;
+                font-weight: 400;
                 line-height: 13px;
                 padding: 0px 5px 5px 0px;
                 margin: 0 3px 3px 0px;
@@ -222,6 +225,7 @@ export default {
                     display: inline-block;
                     background-color: #3F3A50;
                     font-size: 0.725rem;
+                    font-weight: 300;
                     line-height: 18px;
                     padding: 2px 10px;
                     margin: 0 3px 3px 5px;
