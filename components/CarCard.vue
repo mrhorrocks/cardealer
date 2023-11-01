@@ -27,7 +27,7 @@
                 <p>{{ item.derivative }}</p>
 
                 <div class="spec-tags">
-                    <span>{{ item.odometer_value }}</span>
+                    <span>{{ item.odometer_value }} miles</span>
                     <span>{{ item.body_type }}</span>
                     <span>{{ item.technical_data.transmission.value }}</span>
                     <span>{{ item.body_type }}</span>
