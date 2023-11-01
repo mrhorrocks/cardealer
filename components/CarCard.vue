@@ -1,9 +1,9 @@
 <template>
-    <article class="car-card">
+    <article v-for="item in carsData.data" :key="item.id" class="car-card">
         <a href="#">
             <!-- Listings -->
             <div class="listing-tag">
-                <span>Used</span>
+                <span>{{ item.advert_classification }}</span>
             </div>
 
             <!-- Images -->
@@ -19,22 +19,23 @@
             <!-- Car Details -->
             <div class="car-details">
 
-                <p><span>2014 (64) Mercede-Benz</span></p>
+                <!-- Car Name -->
+                <p class="car-name">{{ item.name }}</p>
 
                 <FavouriteStar class="favorite" />
 
-                <p>CLA 250e Coupe Shooting Break</p>
+                <p>{{ item.derivative }}</p>
 
                 <div class="spec-tags">
-                    <span>32k miles</span>
-                    <span>Hybrid</span>
-                    <span>Manual</span>
-                    <span>SUV</span>
+                    <span>{{ item.odometer_value }} miles</span>
+                    <span>{{ item.fuel_type }}</span>
+                    <span>{{ item.technical_data.transmission.value }}</span>
+                    <span>{{ item.body_type }}</span>
                 </div>
 
                 <div class="pricing">
                     <p class="ppm"><span>£550.90</span> /mo(PC)</p>
-                    <p class="total-price">£23.300 <button> Calculate finance</button> </p>
+                    <p class="total-price">£{{ item.price }} <button @click="calculateFinance"> Calculate finance</button> </p>
                 </div>
 
             </div>
@@ -42,13 +43,29 @@
     </article>
 </template>
 
+<script>
+import carsData from '~/assets/mock-vehicle-search-response.json';
+export default {
+    data() {
+        return {
+            carsData
+        };
+    },
+    methods: {
+        calculateFinance(e) {
+            e.preventDefault();
+        },
+    },
+}
+</script>
+
 <style lang="scss" scoped>
 .car-card {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 305px;
+    min-width: 375px;
     margin-top: 0.5rem;
     border-radius: 0rem;
     overflow: hidden;
@@ -61,7 +78,7 @@
 
     .listing-tag {
         position: absolute;
-        top: 96px;
+        top: 100px;
         right: 35px;
 
         span {
@@ -97,11 +114,20 @@
 
         p {
             margin: 0 0 0.25rem 0;
+            &.car-name {
+                width: 270px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                font-weight: 500;
+                font-size: 1rem;
+            }
         }
 
         .favorite {
             position: absolute;
-            top: 6px;
+            top: 10px;
             right: 10px;
             height: 20px;
             width: 20px;
@@ -119,7 +145,8 @@
 
             span {
                 display: inline-block;
-                font-size: 12px;
+                font-size: 0.75rem;
+                font-weight: 400;
                 line-height: 13px;
                 padding: 0px 5px 5px 0px;
                 margin: 0 3px 3px 0px;
@@ -146,6 +173,7 @@
                 color: #7572FF;
                 padding: 0;
                 cursor: pointer;
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -185,7 +213,7 @@
             width: max-content;
 
             img {
-                width: 257px;
+                width: 347px;
                 border-radius: 0;
             }
         }
@@ -201,7 +229,8 @@
                 span {
                     display: inline-block;
                     background-color: #3F3A50;
-                    font-size: 0.625rem;
+                    font-size: 0.725rem;
+                    font-weight: 300;
                     line-height: 18px;
                     padding: 2px 10px;
                     margin: 0 3px 3px 5px;
@@ -230,30 +259,11 @@
 @media only screen and (min-width: 1024px) {
     .car-card {
         max-width: 350px;
-        .car-details {
-            .spec-tags {
-                span {
-                    font-size: 0.725rem;
-                }
-            }
-        }
+
         .image-container {
             img {
                 width: 350px;
             }
-        }
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .car-card {
-        max-width: 290px;
-
-        .image-container {
-            img {
-                width: 290px;
-            }
-
         }
     }
 }
