@@ -161,10 +161,6 @@ export default {
                 color: #55595D;
                 border-radius: 0px;
                 border-right: 1px solid rgb(85, 89, 93, 0.25);
-
-                &:last-child {
-                    border: 0;
-                }
             }
         }
 
