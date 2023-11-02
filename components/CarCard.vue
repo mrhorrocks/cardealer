@@ -29,7 +29,7 @@
                 <div class="spec-tags">
                     <span>{{ item.odometer_value }} miles</span>
                     <span>{{ item.fuel_type }}</span>
-                    <span>{{ item.technical_data.transmission.value }}</span>
+                    <span>{{ item.transmission }}</span>
                     <span>{{ item.body_type }}</span>
                 </div>
 
@@ -48,7 +48,7 @@ import carsData from '~/assets/mock-vehicle-search-response.json';
 export default {
     data() {
         return {
-            carsData
+            carsData,
         };
     },
     methods: {
