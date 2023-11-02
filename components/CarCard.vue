@@ -8,12 +8,18 @@
 
             <!-- Images -->
             <div class="image-container">
-                <img src="@/assets/img/placeholder.jpg" alt="Car">
-                <img src="@/assets/img/placeholder.jpg" alt="Car">
-                <img src="@/assets/img/placeholder.jpg" alt="Car">
-                <img src="@/assets/img/placeholder.jpg" alt="Car">
-                <img src="@/assets/img/placeholder.jpg" alt="Car">
-                <img src="@/assets/img/placeholder.jpg" alt="Car">
+                <img :src="item.media_urls[0].thumb" alt="Car Image" />
+                <img :src="item.media_urls[1].thumb" alt="Car Image" />
+                <img :src="item.media_urls[2].thumb" alt="Car Image" />
+
+            <!-- These images do not consistently load and error handling was unstable -->
+            <!-- 
+                <img :src="item.media_urls[3].thumb" alt="Car Image" />
+                <img :src="item.media_urls[4].thumb" alt="Car Image" />
+                <img :src="item.media_urls[5].thumb" alt="Car Image" />
+                <img :src="item.media_urls[6].thumb" alt="Car Image" />
+                <img :src="item.media_urls[7].thumb" alt="Car Image" />
+            -->
             </div>
 
             <!-- Car Details -->
@@ -35,7 +41,8 @@
 
                 <div class="pricing">
                     <p class="ppm"><span>£550.90</span> /mo(PC)</p>
-                    <p class="total-price">£{{ item.price }} <button @click="calculateFinance"> Calculate finance</button> </p>
+                    <p class="total-price">£{{ item.price }} <button @click="calculateFinance"> Calculate finance</button>
+                    </p>
                 </div>
 
             </div>
@@ -48,13 +55,13 @@ import carsData from '~/assets/mock-vehicle-search-response.json';
 export default {
     data() {
         return {
-            carsData,
+            carsData
         };
     },
     methods: {
         calculateFinance(e) {
             e.preventDefault();
-        },
+        }
     },
 }
 </script>
@@ -114,6 +121,7 @@ export default {
 
         p {
             margin: 0 0 0.25rem 0;
+
             &.car-name {
                 width: 270px;
                 overflow: hidden;
@@ -278,4 +286,5 @@ export default {
             }
         }
     }
-}</style>
+}
+</style>
