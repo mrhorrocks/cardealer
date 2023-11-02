@@ -85,7 +85,7 @@ export default {
 
     .listing-tag {
         position: absolute;
-        top: 100px;
+        top: 86px;
         right: 35px;
 
         span {
