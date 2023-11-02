@@ -12,6 +12,11 @@
                 <img :src="item.media_urls[1].thumb" alt="Car Image" />
                 <img :src="item.media_urls[2].thumb" alt="Car Image" />
 
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
+                <img src="@/assets/img/placeholder.jpg" alt="Car">
+
             <!-- These images do not consistently load and error handling was unstable -->
             <!-- 
                 <img :src="item.media_urls[3].thumb" alt="Car Image" />
@@ -85,7 +90,7 @@ export default {
 
     .listing-tag {
         position: absolute;
-        top: 86px;
+        top: 100px;
         right: 35px;
 
         span {
