@@ -1,5 +1,5 @@
 <template>
-    <header id="header">Header... ...</header>
+    <header id="header">Header...</header>
 
     <div class="flexed-cols">
 
