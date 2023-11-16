@@ -15,15 +15,6 @@
                 <!-- <img src="@/assets/img/placeholderx.jpg" alt="Car" @error="loadAlternateImage" /> -->
                 <img src="@/assets/img/placeholderx.jpg" @error="$event.target.src='@/assets/img/alternate-image.jpg'"/>
                 <!-- <img :src="item.media_urls[3].thumb" alt="Car Image" @error="loadAlternateImage" /> -->
-
-                <!-- These images do not consistently load and error handling was unstable -->
-                <!-- 
-                <img :src="item.media_urls[3].thumb" alt="Car Image" />
-                <img :src="item.media_urls[4].thumb" alt="Car Image" />
-                <img :src="item.media_urls[5].thumb" alt="Car Image" />
-                <img :src="item.media_urls[6].thumb" alt="Car Image" />
-                <img :src="item.media_urls[7].thumb" alt="Car Image" />
-                -->
             </div>
 
             <!-- Car Details -->
