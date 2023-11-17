@@ -1,10 +1,10 @@
 <template>
-    <header id="header">Header....</header>
+    <header id="header">Header</header>
 
     <div class="flexed-cols">
 
         <!-- FILTERS -->
-        <aside class="filters">Filters...</aside>
+        <aside class="filters">Filters</aside>
 
         <!-- MAIN CONTENT -->
         <main>
